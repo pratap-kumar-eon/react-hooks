@@ -1,7 +1,33 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
 .App {
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  background-color: #161816;
+  color: white;
+  padding: 10px 20px;
   text-align: center;
 }
 
+/* Footer Styles */
+.footer {
+  background-color: #0e0f0e;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: auto; /* Pushes footer to the bottom */
+}
+.content {
+  flex: 1; /* Fills remaining space */
+  padding: 20px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

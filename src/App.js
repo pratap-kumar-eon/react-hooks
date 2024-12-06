@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header'
+import Footer from './components/Footer';
+import UseStateHook from './components/UseStateHook';
+import UseEffectsHook from './components/UseEffectsHook';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header/>
+          <main className='content'>
+            <UseStateHook/>
+            <UseEffectsHook/>
+          </main>        
+        <Footer/>
     </div>
   );
 }
